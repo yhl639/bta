@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <style>
+    .nav {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+}
+.nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 16px;
+    transition: 0.3s;
+    position: relative;
+}
+.nav a:hover {
+    color: #00d4ff;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+/* 导航链接底部发光条 */
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #00d4ff;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #00d4ff;
+}
+.nav a:hover::after {
+    width: 100%;
+}
+/* 下拉菜单 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: rgba(27, 27, 27, 0.3);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(0, 212, 255, 0.3);
+    min-width: 120px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin: 0;
+    border-radius: 8px;
+}
+.dropdown-content a:hover {
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+}
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+    <a href="#">首页</a>
+    <div class="dropdown">
+        <a href="#">帮助</a>
+       <div class="dropdown-content">
+            <a href="#">使用教程</a>
+            <a href="#">常见问题</a>
+            <a href="#">联系客服</a>
+        </div>
+    </div>
+    <a href="../fpmb.html">登录</a>
+    <a href="#">注册</a>
+</div>
+</body>
+</html>

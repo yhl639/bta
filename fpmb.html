@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GILR</title>
+    <style>
+        .nav {
+            position: fixed;
+            top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+}
+.nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 16px;
+    transition: 0.3s;
+    position: relative;
+}
+.nav a:hover {
+    color: #00d4ff;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+/* 导航链接底部发光条 */
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #00d4ff;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #00d4ff;
+}
+.nav a:hover::after {
+    width: 100%;
+}
+/* 下拉菜单 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: rgba(27, 27, 27, 0.3);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(0, 212, 255, 0.3);
+    min-width: 120px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin: 0;
+    border-radius: 8px;
+}
+.dropdown-content a:hover {
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+}
+    </style>
+
+
+
+    <style>
+        #clock{
+            color: white;
+            font-size: 18px;
+            text-align:center;
+            margin-bottom: 15px;
+        }
+    body{
+        margin:0;
+        height:100vh;
+        background:local-grdient(135deg, #0f0c29, #302b63, #24243e);
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    font-family: '微软雅黑', sans-serif;
+}
+
+form {
+    width: 300px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    color:#333 white;
+    text-align: center;
+}
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.8);
+    color:#333 white;
+    outline: none;
+}
+input[type="radio"] {
+    width: auto;
+}
+input[type="submit"] {
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 60%;
+
+    }        
+        input{outline:none; border-color:
+            #667eea; box-shadow:0 0 10px rgba(102, 126, 234, 0.5);}
+
+        input{border:2px solid #ddd; border-radius:5px; padding:8px; margin:5px 
+        0; cursor:pointer; }
+        form {
+            width: 150px; 
+            margin: 20px auto;
+            padding: 81px;
+        }
+        
+        
+    </style>
+</head>
+
+<form>
+        名字: <input required type="text" placeholder="名"><br><br>
+        密码: <input required type="password" maxlength="10" placeholder="请输入密码"><br><br>
+        邮箱: <input required type="text" placeholder="邮箱"><br><br>
+        QQ号: <input maxlength="10" required type="text" placeholder="QQ"><br><br>
+        <div id="color">  </div>
+        <input type="submit" value="登录">
+    </form>
+
+</body>
+    <div class="nav">
+<a href="BYX/my-project.HTML">返回首页</a>
+<a href="bpur.HTML" ></a style="background:rgba(0, 212, 255, 0.3);border: radius 20px; padding:8px 10px;></a> 
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
